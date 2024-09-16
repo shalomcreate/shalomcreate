@@ -1,0 +1,95 @@
+import java.util.Scanner;
+
+public class CreativeWriterApp {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("Creative Writer Application");
+            System.out.println("1. Story Lab");
+            System.out.println("2. Song Lab");
+            System.out.println("3. Spoken Lab");
+            System.out.println("4. Narrative Lab");
+            System.out.println("5. Essay Lab");
+            System.out.println("6. Research Lab");
+            System.out.println("7. Exit");
+            System.out.print("Choose an option: ");
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline
+
+            switch (choice) {
+                case 1:
+                    handleStoryLab(scanner);
+                    break;
+                case 2:
+                    handleSongLab(scanner);
+                    break;
+                case 3:
+                    handleSpokenLab(scanner);
+                    break;
+                case 4:
+                    handleNarrativeLab(scanner);
+                    break;
+                case 5:
+                    handleEssayLab(scanner);
+                    break;
+                case 6:
+                    handleResearchLab(scanner);
+                    break;
+                case 7:
+                    System.out.println("Exiting...");
+                    return;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
+    }
+
+    private static void handleStoryLab(Scanner scanner) {
+        System.out.println("Story Lab");
+        System.out.print("Enter your story: ");
+        String story = scanner.nextLine();
+        // Here you would save or process the story
+        System.out.println("Story saved: " + story);
+    }
+
+    private static void handleSongLab(Scanner scanner) {
+        System.out.println("Song Lab");
+        System.out.print("Enter your song lyrics: ");
+        String song = scanner.nextLine();
+        // Here you would save or process the song lyrics
+        System.out.println("Song lyrics saved: " + song);
+    }
+
+    private static void handleSpokenLab(Scanner scanner) {
+        System.out.println("Spoken Lab");
+        System.out.print("Enter your spoken word content: ");
+        String spoken = scanner.nextLine();
+        // Here you would save or process the spoken word content
+        System.out.println("Spoken word content saved: " + spoken);
+    }
+
+    private static void handleNarrativeLab(Scanner scanner) {
+        System.out.println("Narrative Lab");
+        System.out.print("Enter your narrative: ");
+        String narrative = scanner.nextLine();
+        // Here you would save or process the narrative
+        System.out.println("Narrative saved: " + narrative);
+    }
+
+    private static void handleEssayLab(Scanner scanner) {
+        System.out.println("Essay Lab");
+        System.out.print("Enter your essay: ");
+        String essay = scanner.nextLine();
+        // Here you would save or process the essay
+        System.out.println("Essay saved: " + essay);
+    }
+
+    private static void handleResearchLab(Scanner scanner) {
+        System.out.println("Research Lab");
+        System.out.print("Enter your research notes: ");
+        String research = scanner.nextLine();
+        // Here you would save or process the research notes
+        System.out.println("Research notes saved: " + research);
+    }
+}
